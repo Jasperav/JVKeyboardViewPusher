@@ -1,0 +1,6 @@
+use_frameworks!
+target 'JVKeyboardViewPusher_Tests' do
+  pod 'JVKeyboardViewPusher', :path => '../'
+  
+  
+end
