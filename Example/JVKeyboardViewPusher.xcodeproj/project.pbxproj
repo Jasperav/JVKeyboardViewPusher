@@ -13,13 +13,13 @@
 
 /* Begin PBXFileReference section */
 		112021E0A95564272605608C /* Pods-JVKeyboardViewPusher_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JVKeyboardViewPusher_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JVKeyboardViewPusher_Tests/Pods-JVKeyboardViewPusher_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4A8A645C89C1825AE04A9B67 /* JVKeyboardViewPusher.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JVKeyboardViewPusher.podspec; path = ../JVKeyboardViewPusher.podspec; sourceTree = "<group>"; };
+		4A8A645C89C1825AE04A9B67 /* JVKeyboardViewPusher.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JVKeyboardViewPusher.podspec; path = ../JVKeyboardViewPusher.podspec; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* JVKeyboardViewPusher_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JVKeyboardViewPusher_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7DBE3E3140BDB987BB6AF5F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7DBE3E3140BDB987BB6AF5F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7FDB6199C876E25001E11A0E /* Pods_JVKeyboardViewPusher_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JVKeyboardViewPusher_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		94CF5407A2B07E02A989BEBC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		94CF5407A2B07E02A989BEBC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A56A7D427D498DCD34FF66AC /* Pods-JVKeyboardViewPusher_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JVKeyboardViewPusher_Tests.release.xcconfig"; path = "Target Support Files/Pods-JVKeyboardViewPusher_Tests/Pods-JVKeyboardViewPusher_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +95,6 @@
 				112021E0A95564272605608C /* Pods-JVKeyboardViewPusher_Tests.debug.xcconfig */,
 				A56A7D427D498DCD34FF66AC /* Pods-JVKeyboardViewPusher_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,12 +130,9 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = N4EV3W64CV;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -274,11 +270,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -320,10 +317,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -332,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 112021E0A95564272605608C /* Pods-JVKeyboardViewPusher_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = N4EV3W64CV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -345,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JVKeyboardViewPusher_Example.app/JVKeyboardViewPusher_Example";
 			};
 			name = Debug;
@@ -354,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A56A7D427D498DCD34FF66AC /* Pods-JVKeyboardViewPusher_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = N4EV3W64CV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -363,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JVKeyboardViewPusher_Example.app/JVKeyboardViewPusher_Example";
 			};
 			name = Release;

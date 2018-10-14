@@ -1,0 +1,16 @@
+PODS:
+  - JVKeyboardViewPusher (0.1.0)
+
+DEPENDENCIES:
+  - JVKeyboardViewPusher (from `../`)
+
+EXTERNAL SOURCES:
+  JVKeyboardViewPusher:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JVKeyboardViewPusher: 73fb9aec11e1dfd6b49e1b16d570cc599f76ad9d
+
+PODFILE CHECKSUM: 25de222f8454e1284b2e9d05a2a0c7040b052f36
+
+COCOAPODS: 1.6.0.beta.1

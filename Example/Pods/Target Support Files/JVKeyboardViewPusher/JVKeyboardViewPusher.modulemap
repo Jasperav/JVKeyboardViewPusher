@@ -1,0 +1,6 @@
+framework module JVKeyboardViewPusher {
+  umbrella header "JVKeyboardViewPusher-umbrella.h"
+
+  export *
+  module * { export * }
+}
