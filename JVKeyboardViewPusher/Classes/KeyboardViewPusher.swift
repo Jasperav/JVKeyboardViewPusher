@@ -21,8 +21,6 @@ open class KeyboardViewPusher {
     /// We need this to properly animate it back when the keyboard will hide.
     public let viewBottomConstraintConstant: CGFloat
     
-    private let defaultAnimationDuration: TimeInterval = 0.25
-    
     public init(viewControllerView: UIView, view: UIView, viewBottomConstraint: NSLayoutConstraint) {
         self.viewControllerView = viewControllerView
         self.view = view
@@ -56,19 +54,17 @@ open class KeyboardViewPusher {
     }
     
     @objc open func keyboardWillShow(_ notification: NSNotification) {
-        guard let keyboardHeight = notification.determineKeyboardHeight() else { return }
-        
-        let maximumPushValue = -(keyboardHeight - viewControllerView.safeAreaInsets.bottom)
+        let maximumPushValue = -(notification.keyboardHeight - viewControllerView.safeAreaInsets.bottom)
         
         viewBottomConstraint.constant = maximumPushValue
         
-        UIView.animate(withDuration: notification.determineKeyboardAnimationDuration() ?? defaultAnimationDuration) {
+        UIView.animate(withDuration: notification.keyboardAnimationDuration) {
             self.viewControllerView.layoutIfNeeded()
         }
     }
     
     @objc open func keyboardWillHide(_ notification: NSNotification) {
-        hide(animationDuration: notification.determineKeyboardAnimationDuration() ?? defaultAnimationDuration)
+        hide(animationDuration: notification.keyboardAnimationDuration)
     }
     
     // When animation with a value of 0, it doesn't actually animates it but directly layouts the view.
